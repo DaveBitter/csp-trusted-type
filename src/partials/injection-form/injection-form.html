@@ -1,0 +1,16 @@
+<script
+  type="module"
+  src="./partials/injection-form/injection-form.js"
+></script>
+<link rel="stylesheet" href="./partials/injection-form/injection-form.css" />
+
+<div class="injection-form">
+  <form class="injection-form__form" data-injection-form>
+    <label class="injection-form__label" for="input">Input</label>
+    <textarea id="'input" class="injection-form__input" name="input">
+window.alert('Hello!')</textarea
+    >
+    <button class="injection-form__button" type="submit">inject</button>
+  </form>
+  <div data-injection-form-output></div>
+</div>
