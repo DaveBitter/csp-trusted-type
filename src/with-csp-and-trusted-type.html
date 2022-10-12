@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <include src="./partials/head/head.html">
+    { "type": "with-csp-and-trusted-type", "title": "With CSP and Trusted Type"}
+  </include>
+  <body>
+    <include src="./partials/navigation/navigation.html"></include>
+    <main>
+      <include src="./partials/injection-form/injection-form.html">
+        { "type": "with-dom-purify-and-trusted-type" }
+      </include>
+    </main>
+  </body>
+</html>

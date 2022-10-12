@@ -1,11 +1,14 @@
 {
   "scripts": {
-    "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html"
+    "build": "parcel build ./src/*.html",
+    "dev": "parcel ./src/*.html"
   },
   "devDependencies": {
     "parcel": "^2.7.0",
     "parcel-plugin-prettier": "^0.2.1",
     "posthtml-include": "^1.7.4"
+  },
+  "dependencies": {
+    "dompurify": "^2.4.0"
   }
 }

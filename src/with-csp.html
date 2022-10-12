@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <include src="./partials/head/head.html">
-    { "type": "without-csp", "title": "Without CSP" }
+    { "type": "with-csp", "title": "With CSP" }
   </include>
   <body>
     <include src="./partials/navigation/navigation.html"></include>
     <main>
-      <include src="./partials/injection-form/injection-form.html"></include>
+      <include src="./partials/injection-form/injection-form.html">
+        { "type": "with-dom-purify" }
+      </include>
     </main>
   </body>
 </html>
